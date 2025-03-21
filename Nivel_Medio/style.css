@@ -1,0 +1,54 @@
+html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(150, 150, 150);
+    height: 100vh;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container span {
+    display: block;
+    width: 60px; /*tamanho da luz*/
+    height: 60px;
+    border-radius: 50%;
+    border: 3px solid black; /*a borda preta*/
+    margin-bottom: 15px; /*espaço nas luzes*/
+    transition: all 0.2s ease; /*muda devagar*/
+}
+
+.vermelho {
+    background-color: rgb(109, 42, 42);
+}
+.amarelo {
+    background-color: rgb(138, 138, 6);
+}
+.verde {
+    background-color: rgb(7, 99, 7);
+}
+
+.vermelho-ligado {
+    background: red;
+    box-shadow: 0 0 15px 3px red;
+    transform: scale(1.1); /* efeito de que aumenta quando ta ligado */
+}
+.amarelo-ligado {
+    background: yellow;
+    box-shadow: 0 0 15px 3px yellow;
+    transform: scale(1.1);
+}
+.verde-ligado {
+    background: green;
+    box-shadow: 0 0 15px 3px green;
+    transform: scale(1.1);
+}
